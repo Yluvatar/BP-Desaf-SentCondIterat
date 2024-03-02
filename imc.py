@@ -5,6 +5,9 @@ try:
     peso = float(sys.argv[1])
     altura = float(sys.argv[2])
 
+    if altura > 2.5:
+        altura /= 100
+
     imc = round(peso / (altura**2), 2)
 
     if imc < 18.5:
